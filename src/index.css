@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0b131d, #1b2a45);
+}
+
+.section {
+  background-color: #1B263B;
+  padding-top: 50px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 485px;
+  width: 120%;
+  transform: translateX(-10%);
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.bigSearch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.search {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  width: 80%;
+  height: 40px;
+  background-color: transparent;
+}
+
+.search::placeholder,
+input[type="text"] {
+  color: #A5A5A5;
+  font-size: 16px;
+}
+
+.search:focus {
+  outline: none;
+}
+
+input[type="text"] {
+  padding-left: 16px;
+}
+
+.button {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  transition-duration: 0.2s;
+  transform: scale(1.07);
+  margin-left: 10px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  transform: scale(1.13);
+}
+
+.button img {
+  width: 70%;
+  opacity: 0.5;
+  filter: brightness(0) invert(1);
+}
+
+.button:hover img {
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
+
+.weatherDisplay {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+  color: #E0E1DD;
+}
+
+.weatherDisplay p {
+  font-size: 32px;
+  font-weight: 520;
+}
+
+.tmp {
+  transform: scale(1.4);
+  margin-bottom: 10px;
+}
+
+.weatherIcon {
+  width: 100px;
+  margin-bottom: 20px;
+}
